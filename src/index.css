@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../public/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: 'JetBrains Mono';
+    font-weight: bold;
+    background-color: #18171F;
+}
