@@ -19,13 +19,13 @@ const AppCheckbox: React.FC<AppCheckboxProps> = ({
 
   useEffect(() => {
     handleUpdate(checked);
-  }, [checked]);
+  }, [checked, handleUpdate]);
   return (
     <div className="flex items-center">
       <Checkbox.Root
         className="flex h-4 w-4 items-center justify-center bg-very-dark-grey outline outline-2 -outline-offset-2 outline-almost-white"
         defaultChecked={defaultChecked}
-        onCheckedChange={(e) => {
+        onCheckedChange={() => {
           setChecked(!checked);
         }}
         id="c1"
